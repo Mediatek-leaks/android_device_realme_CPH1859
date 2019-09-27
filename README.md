@@ -1,2 +1,2 @@
-# android_device_realme_CPH1859
-This is the device tree for Realme 1 with 4GB memory and 64GB Storage.
+# Device tree for Realme 1
+Realme 1 is the first smartphone from Realme (sub brand of oppo then). It is a mid-range smartphone released on May 2018. Its code name is CPH1859.
