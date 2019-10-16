@@ -16,7 +16,7 @@
 
 DEVICE_PATH := device/oppo/CPH1859
 
-#TODO:
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
 
