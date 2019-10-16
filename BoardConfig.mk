@@ -1,5 +1,5 @@
 # mt6771 platform boardconfig
-DEVICE_PATH := device/motorola/CPH1859
+DEVICE_PATH := device/oppo/CPH1859
 
 # TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
