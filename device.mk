@@ -20,6 +20,9 @@ DEVICE_PATH := device/oppo/CPH1859
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
 
+# Common stuff
+$(call inherit-product, device/mediatek/mt6771-common/mt6771.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
