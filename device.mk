@@ -14,20 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/oppo/CPH1859
-
-
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
-
-# Common stuff
-$(call inherit-product, device/mediatek/mt6771-common/mt6771.mk)
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-endif
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -40,14 +27,26 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service-mediatek
-    lights.mt6771
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+endif
 
-# Net
-PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
+# Keyboard layout
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,${LOCAL_PATH}/keylayout,system/usr/keylayout)
+
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,${LOCAL_PATH}/bluetooth,system/etc/bluetooth) 
+    
+# Idc
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,${LOCAL_PATH}/idc,system/usr/idc)
+# Telephony
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,${LOCAL_PATH}/telephony,vendor/etc)    
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -61,28 +60,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/org.ifaa.android.manager.permissions.xml:system/etc/permissions/org.ifaa.android.manager.permissions.xml \
     $(LOCAL_PATH)/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml
     
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/bluetooth,system/etc/bluetooth) 
-    
-# System properties
--include $(LOCAL_PATH)/system_prop.mk
-
-# Telephony
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/telephony,vendor/etc)
-    
-# Power
-PRODUCT_PACKAGES += \
-    power.mt6771
-    
-# Keyboard layout
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/keylayout,system/usr/keylayout)
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/idc,system/usr/idc)
-    
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:vendor/etc/media_codecs.xml \
@@ -91,7 +68,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles.xml:vendor/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/media/mtk_omx_core.cfg:vendor/etc/mtk_omx_core.cfg \
     $(LOCAL_PATH)/media/media_codecs_ffmpeg:vendor/etc/media_codecs_ffmpeg
-    
+
 # Misc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/clatd.conf:system/etc/clatd.conf \
@@ -100,12 +77,32 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/custom.conf:system/etc/custom.conf \
     $(LOCAL_PATH)/misc/clatd.conf:system/etc/clatd.conf \
     $(LOCAL_PATH)/misc/slp_conf:vendor/etc/slp_conf
-    
+
 # Init
 PRODUCT_PACKAGES += \
     init.target.rc
+
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service-mediatek \
+    lights.mt6771
+
+# Power
+PRODUCT_PACKAGES += \
+    power.mt6771
     
 # Thermal
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/thermal,vendor/etc/.tp)  
+    
+# System properties
+-include $(LOCAL_PATH)/system_prop.mk
+    
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
+
 
