@@ -1,4 +1,0 @@
-add_lunch_combo lineage_CPH1859-eng
-add_lunch_combo lineage_CPH1859-user
-add_lunch_combo lineage_CPH1859-userdebug
-
