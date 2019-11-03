@@ -99,10 +99,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/thermal,vendor/etc/.tp)  
     
-# System properties
--include $(LOCAL_PATH)/system_prop.mk
-    
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
-
-
