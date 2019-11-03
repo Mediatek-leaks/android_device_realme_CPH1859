@@ -50,15 +50,9 @@ PRODUCT_COPY_FILES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:system/etc/permissions/privapp-permissions-mediatek.xml \
     $(LOCAL_PATH)/permissions/com.mediatek.ims.plugin.xml:system/etc/permissions/com.mediatek.ims.plugin.xml \
-    $(LOCAL_PATH)/permissions/com.android.media.remotedisplay.xml:system/etc/permissions/com.android.media.remotedisplay.xml \
-    $(LOCAL_PATH)/permissions/com.android.location.provider.xml:system/etc/permissions/com.android.location.provider.xml \
-    $(LOCAL_PATH)/permissions/com.android.mediadrm.signer.xml:system/etc/permissions/com.android.mediadrm.signer.xml \
-    $(LOCAL_PATH)/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
-    $(LOCAL_PATH)/permissions/com.wapi.wapicertstore.xml:system/etc/permissions/com.wapi.wapicertstore.xml \
-    $(LOCAL_PATH)/permissions/org.ifaa.android.manager.permissions.xml:system/etc/permissions/org.ifaa.android.manager.permissions.xml \
-    $(LOCAL_PATH)/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml
+    $(LOCAL_PATH)/permissions/com.android.mediadrm.signer.xml:system/etc/permissions/com.android.mediadrm.signer.xml
+
     
 # Media
 PRODUCT_COPY_FILES += \
@@ -72,7 +66,6 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/clatd.conf:system/etc/clatd.conf \
-    $(LOCAL_PATH)/misc/mtklog-config.prop:system/etc/mtklog-config.prop \
     $(LOCAL_PATH)/misc/factory.ini:system/etc/factory.ini \
     $(LOCAL_PATH)/misc/custom.conf:system/etc/custom.conf \
     $(LOCAL_PATH)/misc/clatd.conf:system/etc/clatd.conf \
