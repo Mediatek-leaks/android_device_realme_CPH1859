@@ -68,19 +68,32 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Keyboard layout
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/keylayout,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+    $(LOCAL_PATH)/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
+    $(LOCAL_PATH)/keylayout/AVRCP.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/AVRCP.kl \
+    $(LOCAL_PATH)/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/bluetooth,$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth) 
+    $(LOCAL_PATH)/bluetooth/bt_did.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_did.conf \
+    $(LOCAL_PATH)/bluetooth/bt_mtk_iot_list.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_mtk_iot_list.conf \
+    $(LOCAL_PATH)/bluetooth/bt_stack.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_stack.conf \
+    $(LOCAL_PATH)/bluetooth/mtk_bt_fw.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/mtk_bt_fw.conf \
+    $(LOCAL_PATH)/bluetooth/mtk_bt_stack.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/mtk_bt_stack.conf \
+    $(LOCAL_PATH)/bluetooth/oppo_interop_database.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/oppo_interop_database.conf \
+    $(LOCAL_PATH)/bluetooth/profile_version.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/profile_version.conf
     
 # Idc
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/idc,$(TARGET_COPY_OUT_SYSTEM)/usr/idc)
+    $(LOCAL_PATH)/idc/AVRCP.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/AVRCP.idc
 
 # Telephony
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/telephony,$(TARGET_COPY_OUT_VENDOR)/etc)    
+    $(LOCAL_PATH)/telephony/cdma_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list.xml \
+    $(LOCAL_PATH)/telephony/cdma_ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP01.xml \
+    $(LOCAL_PATH)/telephony/cdma_ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP09.xml \
+    $(LOCAL_PATH)/telephony/cdma_ecc_list_OP012.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP012.xml \
+    $(LOCAL_PATH)/telephony/cdma_ecc_list_ss.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_ss.xml
+          
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -281,7 +294,14 @@ PRODUCT_PACKAGES += \
     thermal.mt6771
     
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,${LOCAL_PATH}/thermal,$(TARGET_COPY_OUT_VENDOR)/etc/.tp)  
+    $(LOCAL_PATH)/thermal/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
+    $(LOCAL_PATH)/thermal/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
+    $(LOCAL_PATH)/thermal/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
+    $(LOCAL_PATH)/thermal/.thermal_policy_00:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00 \
+    $(LOCAL_PATH)/thermal/.thermal_policy_03:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_03 \
+    $(LOCAL_PATH)/thermal/.thermal_policy_05:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_05 \
+    $(LOCAL_PATH)/thermal/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
+    $(LOCAL_PATH)/thermal/.thermal_policy_09:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_09  
 
 #WiFi
 PRODUCT_PACKAGES += \
