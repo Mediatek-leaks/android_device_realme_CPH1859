@@ -1301,11 +1301,6 @@ service media-resource-reconciliation /vendor/bin/self-init reconcile_media_reso
     oneshot
     disabled
     seclabel u:r:rutilsdaemon:s0
-service ireader-version /vendor/bin/self-init get_ireader_version
-    user root
-    oneshot
-    disabled
-    seclabel u:r:rutilsdaemon:s0
 service prop-adap-core-gsi /vendor/bin/self-init gsicore
     class core
     user root
@@ -1321,8 +1316,6 @@ service prop-adap-main-gsi /vendor/bin/self-init gsimain
 
 on property:ro.oppo.reconcile_media_resource=1
     start media-resource-reconciliation
-on property:ro.oppo.ireader_flag=1
-    start ireader-version
 #endif
 
 #ifdef VENDOR_EDIT
