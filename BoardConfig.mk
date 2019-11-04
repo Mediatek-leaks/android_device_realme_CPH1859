@@ -54,6 +54,12 @@ TARGET_USES_64_BIT_BINDER := true
 LINKER_FORCED_SHIM_LIBS := /system/lib/libnetutils.so|libshim_ifc.so
 LINKER_FORCED_SHIM_LIBS += /system/lib/libgui.so|libshim_gui.so
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2019-10-05
+
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
