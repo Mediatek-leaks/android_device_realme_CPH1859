@@ -277,7 +277,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1-service-mediatek \
+    android.hardware.usb@1.1-service-mediatek
 
 # VNDK-SP
 PRODUCT_PACKAGES += \
