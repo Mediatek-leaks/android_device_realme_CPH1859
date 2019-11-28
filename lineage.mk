@@ -15,11 +15,6 @@
 # limitations under the License.
 #
 
-# Inherit from hardware-specific part of the product configuration
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
-
-# Inherit some common lineageos stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := CPH1859
