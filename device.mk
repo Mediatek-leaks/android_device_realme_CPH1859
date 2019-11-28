@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     gralloc.mt6771 \
     gralloc.default \
-    hwcomposer.mt6771
+    hwcomposer.mt6771 \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libtinyxml \
