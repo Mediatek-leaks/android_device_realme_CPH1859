@@ -9,48 +9,6 @@ LOCAL_SRC_FILES    := ueventd.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)
 include $(BUILD_PREBUILT)
 
-#config scripts
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.oppo.hypnus.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := bin/init.oppo.hypnus.sh
-LOCAL_MODULE_PATH  := $(TARGET_OUT_SYSTEM)/etc
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.oppo.hypnus_logging.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := bin/init.oppo.hypnus_logging.sh
-LOCAL_MODULE_PATH  := $(TARGET_OUT_SYSTEM)/etc
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.oppo.kneuron.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := bin/init.oppo.kneuron.sh
-LOCAL_MODULE_PATH  := $(TARGET_OUT_SYSTEM)/etc
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.oppo.securetemplet.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := bin/init.oppo.securetemplet.sh
-LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/bin
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := engineer_vendor_shell.sh
-LOCAL_MODULE_TAGS  := optional eng
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := bin/engineer_vendor_shell.sh
-LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/bin
-include $(BUILD_PREBUILT)
-
 #init scripts
 
 include $(CLEAR_VARS)
