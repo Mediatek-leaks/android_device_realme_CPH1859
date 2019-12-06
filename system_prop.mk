@@ -86,6 +86,7 @@ ro.boot.opt_lte_support=1
 ro.boot.opt_c2k_lte_mode=0
 ro.boot.opt_md1_support=9
 ro.boot.opt_md3_support=0
+vendor.ril.data.gsm_imsi0=405854004072403
 
 # WFD
 wfd.dummy.enable=1

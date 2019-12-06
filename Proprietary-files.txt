@@ -101,7 +101,11 @@
 	framework/vendor.oppo.hardware.biometrics.face-V1.0-java.jar
 	lib/drm/mtkdrm/libdrmctaplugin.so
 	lib/drm/mtkdrm/libdrmmtkplugin.so
+	lib/libaed.so
 	lib/android.frameworks.faceservice@1.0.so
+	lib/android.hardware.audio@4.0.so
+	lib/android.hardware.camera.provider@2.4.so
+	lib/android.hardware.keymaster@4.0.so
 	lib/adbconnection.so
 	lib/libaudio-resampler.so
 	lib/libbessound_hd_mtk.so
@@ -152,6 +156,10 @@
 	lib/libhidl-gen-utils.so
 	lib/libhwm_mtk.so
 	lib/libimage_processing_util_jni.so
+	lib/libimsma.so
+	lib/libimsma_rtp.so
+	lib/libimsma_adapt.so
+	lib/ibimsma_socketwrapper.so
 	lib/libimg_utils.so
 	lib/libion_mtk_sys.so
 	lib/libion_ulit_sys.so
@@ -190,12 +198,18 @@
 	lib/libui.so
 	lib/libui_ext_fwk.so
 	lib/libwatchdog.so
+	lib64/libz.so
 	lib/vendor.mediatek.hardware.videotelephony@1.0.so
 	lib/vendor.oppo.hardware.biometrics.face@1.0.so
 	lib64/drm/mtkdrm/libdrmctaplugin.so
 	lib64/drm/mtkdrm/libdrmmtkplugin.so
+	lib64/libaed.so
 	lib64/android.frameworks.faceservice@1.0.so
 	lib64/android.frameworks.vr.composer@1.0.so
+	lib64/android.hardware.audio@4.0.so
+	lib64/android.hardware.camera.provider@2.4.so
+	lib64/android.hardware.keymaster@4.0.so
+	lib64/android.hardware.usb.gadget@1.0.so
 	lib64/adbconnection.so
 	lib64/libaudio-resampler.so
 	lib64/libbessound_hd_mtk.so
@@ -254,6 +268,10 @@
 	lib64/libhwm_mtk.so
 	lib64/libicdcodec_jni.so
 	lib64/libimage_processing_util_jni.so
+	lib64/libimsma.so
+	lib64/libimsma_rtp.so
+	lib64/libimsma_adapt.so
+	llib64/ibimsma_socketwrapper.so
 	lib64/libimg_utils.so
 	lib64/libion_mtk_sys.so
 	lib64/libion_ulit_sys.so
@@ -294,6 +312,7 @@
 	lib64/libudf.so
 	lib64/libui_ext_fwk.so
 	lib64/libwatchdog.so
+	lib64/libz.so
 	lib64/vendor.mediatek.hardware.camera.camdump@1.0.so
 	lib64/vendor.mediatek.hardware.lbs@1.0.so
 	lib64/vendor.mediatek.hardware.videotelephony@1.0.so
