@@ -169,30 +169,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
     fstab.mt6771 \
-    init.aee.rc \
-    init.ago.rc \
-    init.connectivity.rc \
-    init.modem.rc \
-    init.mt6771.rc \
-    init.mt6771.usb.rc \
-    init.oppo.debug.rc \
-    init.oppo.face.rc \
-    init.oppo.reserve.rc \
-    init.oppo.seccommon.rc \
-    init.project.rc \
-    init.sensor_1_0.rc \
-    init.target.rc \
-    init.usb.configfs.rc \
-    init.usb.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    multi_init.rc
+    init.mt6771.rc
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -204,7 +182,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-mediatek \
-    libxml2 \
     Snap
 
 # Health
@@ -311,10 +288,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
         
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)

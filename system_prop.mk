@@ -111,11 +111,11 @@ dalvik.vm.heapsize=512m \
 dalvik.vm.heapstartsize=16m \
 dalvik.vm.heaptargetutilization=0.75
 
-# USB BICR function
-ro.sys.usb.bicr=no
-
-# USB MTP WHQL
-ro.sys.usb.mtp.whql.enable=0
-
-# Zygote
-ro.zygote.preload.enable=0
+#Adding for Debugging
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+ro.debuggable=1
+ro.allow.mock.location=0
+ro.adb.secure=0
+ro.secure=0
