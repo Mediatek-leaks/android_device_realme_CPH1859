@@ -159,7 +159,7 @@
 	lib/libimsma.so
 	lib/libimsma_rtp.so
 	lib/libimsma_adapt.so
-	lib/ibimsma_socketwrapper.so
+	lib/libimsma_socketwrapper.so
 	lib/libimg_utils.so
 	lib/libion_mtk_sys.so
 	lib/libion_ulit_sys.so
@@ -197,6 +197,7 @@
 	lib/libudf.so
 	lib/libui.so
 	lib/libui_ext_fwk.so
+	lib/libvt_avsync.so
 	lib/libwatchdog.so
 	lib64/libz.so
 	lib/vendor.mediatek.hardware.videotelephony@1.0.so
@@ -271,7 +272,7 @@
 	lib64/libimsma.so
 	lib64/libimsma_rtp.so
 	lib64/libimsma_adapt.so
-	llib64/ibimsma_socketwrapper.so
+	llib64/libimsma_socketwrapper.so
 	lib64/libimg_utils.so
 	lib64/libion_mtk_sys.so
 	lib64/libion_ulit_sys.so
@@ -311,6 +312,7 @@
 	lib64/libtofverification_jni.so
 	lib64/libudf.so
 	lib64/libui_ext_fwk.so
+	lib64/libvt_avsync.so
 	lib64/libwatchdog.so
 	lib64/libz.so
 	lib64/vendor.mediatek.hardware.camera.camdump@1.0.so
