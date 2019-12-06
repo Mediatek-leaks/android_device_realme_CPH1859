@@ -14,6 +14,9 @@ on init
     # We only need it to be overridden before things are mounted
     mount none /system/etc/fstab.mt6771 /vendor/etc/fstab.mt6771 bind
 
+on boot
+    setprop sys.usb.configfs 1
+
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
     class main
     user root
