@@ -190,6 +190,7 @@
 	lib/libui.so
 	lib/libui_ext_fwk.so
 	lib/libwatchdog.so
+	lib/vendor.mediatek.hardware.videotelephony@1.0.so
 	lib/vendor.oppo.hardware.biometrics.face@1.0.so
 	lib64/drm/mtkdrm/libdrmctaplugin.so
 	lib64/drm/mtkdrm/libdrmmtkplugin.so
@@ -293,4 +294,7 @@
 	lib64/libudf.so
 	lib64/libui_ext_fwk.so
 	lib64/libwatchdog.so
+	lib64/vendor.mediatek.hardware.camera.camdump@1.0.so
+	lib64/vendor.mediatek.hardware.lbs@1.0.so
+	lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 	lib64/vendor.oppo.hardware.biometrics.face@1.0.so
