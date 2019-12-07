@@ -51,7 +51,7 @@
 	bin/tinypcminfo
 	bin/tinyplay
 	bin/tunman
-	bin/vtservice
+	#bin/vtservice
 	bin/wmt_check_patch
 	etc/init/aee_aed.rc
 	etc/init/aee_aed64.rc
