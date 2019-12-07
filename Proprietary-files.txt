@@ -11,10 +11,10 @@
 	bin/common_dcs
 	bin/connsyslogger
 	bin/datafree
-	bin/emdlogger1
-	bin/emdlogger2
-	bin/emdlogger3
-	bin/emdlogger5
+	#bin/emdlogger1
+	#bin/emdlogger2
+	#bin/emdlogger3
+	#bin/emdlogger5
 	bin/em_svr	
 	bin/fatlabel
 	bin/fsck.fat
@@ -56,10 +56,10 @@
 	etc/init/aee_aed.rc
 	etc/init/aee_aed64.rc
 	etc/init/common_dcs.rc
-	etc/init/emdlogger1.rc
-	etc/init/emdlogger2.rc
-	etc/init/emdlogger3.rc	
-	etc/init/emdlogger5.rc
+	#etc/init/emdlogger1.rc
+	#etc/init/emdlogger2.rc
+	#etc/init/emdlogger3.rc	
+	#etc/init/emdlogger5.rc
 	etc/init/em_svr.rc
 	etc/init/ged_srv.rc
 	etc/init/init.vtservice.rc
@@ -79,7 +79,7 @@
 	etc/a2dp_audio_policy_configuration.xml
 	etc/aee-config
 	etc/apns-version.xml
-	etc/emdlogger_usb_config.prop
+	#etc/emdlogger_usb_config.prop
 	etc/hearing_aid_audio_policy_configuration.xml
 	etc/sar_config.xml
 	etc/spn-conf.xml
