@@ -15,7 +15,6 @@
 # limitations under the License.
 #
 
-
 # Release name
 PRODUCT_RELEASE_NAME := CPH1859
 PRODUCT_DEFAULT_LANGUAGE := en

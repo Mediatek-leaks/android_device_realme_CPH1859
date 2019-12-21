@@ -44,10 +44,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Playstore
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ro.com.google.clientidbase=android-oppo
-
-# FRP
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
      
 # DRM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -69,28 +65,15 @@ sys.ipo.pwrdncap=2
 sys.ipo.pwrdncap=2
 
 # Storage
-ro.sys.usb.storage.type=mtp,adb
-ro.sys.sdcardfs=true	
-
-# Rotation
-ro.sf.hwrotation=0
+ro.sys.usb.storage.type=mtp,adb	
 
 #ril
 rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
-persist.radio.default.sim=0
-persist.radio.mobile.data=0,0
-bgw.current3gband=0
-ro.com.android.mobiledata=true
-ro.boot.opt_lte_support=1
-ro.boot.opt_c2k_lte_mode=0
-ro.boot.opt_md1_support=9
-ro.boot.opt_md3_support=0
 vendor.ril.data.gsm_imsi0=405854004072403
 
 # WFD
 wfd.dummy.enable=1
-
 
 #WiFi
 mediatek.wlan.chip=CONSYS_MT6771
@@ -102,21 +85,12 @@ wifi.tethering.interface=ap0
 wifi.interface=wlan0
 wifi.direct.interface=p2p0
 
-
-# Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-dalvik.vm.heapgrowthlimit=384m \
-dalvik.vm.heapmaxfree=16m \
-dalvik.vm.heapminfree=4m \
-dalvik.vm.heapsize=512m \
-dalvik.vm.heapstartsize=16m \
-dalvik.vm.heaptargetutilization=0.75
-
 #Adding for Debugging
-persist.service.adb.enable=1
-persist.service.debuggable=1
-persist.sys.usb.config=mtp,adb
-ro.debuggable=1
-ro.allow.mock.location=0
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+persist.service.adb.enable=1 \
+persist.service.debuggable=1 \
+persist.sys.usb.config=mtp,adb \
+ro.debuggable=1 \
+ro.allow.mock.location=1 \
 ro.adb.secure=0
 ro.secure=0

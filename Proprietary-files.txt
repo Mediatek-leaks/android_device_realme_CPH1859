@@ -81,6 +81,7 @@
 	etc/apns-version.xml
 	#etc/emdlogger_usb_config.prop
 	etc/hearing_aid_audio_policy_configuration.xml
+	etc/mtklog-config.prop
 	etc/sar_config.xml
 	etc/spn-conf.xml
 	framework/android.frameworks.faceservice-V1.0-java.jar
@@ -279,6 +280,7 @@
 	lib64/libja3m.so
 	lib64/liblic_divx-sys.so
 	lib64/libmdloggerrecycle.so
+	lib64/libminijail.so
 	lib64/libmmsceneservice.so
 	lib64/libmotor_control_service.so	
 	lib64/libmrdump.so
