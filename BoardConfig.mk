@@ -95,6 +95,9 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system_prop.mk
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # VNDK
 BOARD_VNDK_VERSION := current
 
