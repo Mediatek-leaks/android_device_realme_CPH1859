@@ -15,9 +15,6 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
@@ -125,5 +122,4 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
         
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
+
