@@ -92,8 +92,14 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6771
 # System Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system_prop.mk
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+
 # VNDK
 BOARD_VNDK_VERSION := current
+
+# Soong
+PRODUCT_SOONG_NAMESPACES += vendor/oppo/CPH1859
 
 # Vendor
 TARGET_COPY_OUT_VENDOR := vendor
